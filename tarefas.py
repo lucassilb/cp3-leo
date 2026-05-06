@@ -16,7 +16,7 @@ def listar_tarefas(lista):
     print("\n===== LISTA DE TAREFAS =====")
 
     for i, tarefa in enumerate(lista, start=1):
-        
+        print(
             f"{i} - "
             f"Descrição: {tarefa['descricao']} | "
             f"Vencimento: {tarefa['data_vencimento']} | "
@@ -25,10 +25,10 @@ def listar_tarefas(lista):
 
 
 def atualizar_tarefa(
-    lista
+    lista,
     indice,
     nova_descricao,
-    nova_data
+    nova_data,
     novo_status
 ):
     if 0 <= indice < len(lista):
